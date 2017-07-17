@@ -1,0 +1,35 @@
+
+- name: Speakers
+  link: /speakers/
+  new_window: false
+  highlight: false
+
+- name: Program
+  link: /program/
+  new_window: false
+  highlight: false
+
+- name: Scholarships
+  link: http://www.surveygizmo.com/s3/3549361/PowerUp-Scholarship-Application
+  new_window: true
+  highlight: false
+
+- name: Volunteer
+  link: http://www.surveygizmo.com/s3/3549510/Volunteer-at-PowerUp
+  new_window: true
+  highlight: false
+
+- name: FAQs
+  link: /faqs/
+  new_window: false
+  highlight: false
+
+- name: Accomm
+  link: http://rooms.powerup.org.au/
+  new_window: false
+  highlight: false
+
+- name: Buy Ticket
+  link: /ticket/
+  new_window: false
+  highlight: false
