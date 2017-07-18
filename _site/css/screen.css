@@ -423,6 +423,10 @@ body {
   width: 100vw;
   overflow: hidden;
   object-fit: cover; }
+  @media screen and (max-width: 39.9375em) {
+    .hero-large,
+    .section-hero-large {
+      height: 95vh; } }
 
 @media screen and (max-width: 39.9375em) {
   .section-hero-large {
@@ -461,6 +465,9 @@ body {
 
 .hero-container-inside {
   height: 100vh; }
+  @media screen and (max-width: 39.9375em) {
+    .hero-container-inside {
+      height: 95vh; } }
   .hero-container-inside .button {
     margin-bottom: 5rem; }
   .hero-container-inside .columns {

@@ -10,6 +10,9 @@ body {
     width: 100vw;
     overflow: hidden;
     object-fit: cover; 
+    @media screen and (max-width: 39.9375em) {
+        height: 95vh;
+    }
 }
 
 .section-hero-large {
@@ -59,6 +62,9 @@ body {
 
 .hero-container-inside {
     height: 100vh;
+    @media screen and (max-width: 39.9375em) {
+        height: 95vh;
+    }
     .button {
         margin-bottom: 5rem;
     }
