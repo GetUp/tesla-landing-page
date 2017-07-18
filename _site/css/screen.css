@@ -53,7 +53,7 @@ h3 {
   font-size: 3rem; }
 
 .side-quote {
-  font-size: 1.5rem; }
+  font-size: 1em; }
 
 .side-quote-large {
   font-size: 3rem;
@@ -317,7 +317,7 @@ nav {
   nav a {
     margin: 0 3px;
     padding: 20px 10px;
-    color: #EEE;
+    color: #333;
     transition: .2s ease-in-out;
     display: none;
     font-weight: 700;
@@ -339,14 +339,14 @@ nav {
       nav a.nav-toggle:hover {
         border: 0; }
   nav a:hover {
-    color: #fff; }
+    color: #333; }
   @media (min-width: 40em) {
     nav a.highlight {
       border-radius: 5px; }
       nav a.highlight:hover {
-        background: #fff; } }
+        background: #333; } }
   nav a.active {
-    color: #fff; }
+    color: #333; }
 
 .nav__logo {
   width: 7rem !important;
@@ -423,10 +423,6 @@ body {
   width: 100vw;
   overflow: hidden;
   object-fit: cover; }
-  @media screen and (max-width: 39.9375em) {
-    .hero-large,
-    .section-hero-large {
-      height: 95vh; } }
 
 @media screen and (max-width: 39.9375em) {
   .section-hero-large {
@@ -465,9 +461,6 @@ body {
 
 .hero-container-inside {
   height: 100vh; }
-  @media screen and (max-width: 39.9375em) {
-    .hero-container-inside {
-      height: 95vh; } }
   .hero-container-inside .button {
     margin-bottom: 5rem; }
   .hero-container-inside .columns {
@@ -536,21 +529,16 @@ body {
       content: "";
       height: 5px;
       background: #ff661f;
-      background: -moz-linear-gradient(left, #ff661f 0%, #d01f00 100%);
-      background: -webkit-gradient(left top, right top, color-stop(0%, #ff661f), color-stop(100%, #d01f00));
-      background: -webkit-linear-gradient(left, #ff661f 0%, #d01f00 100%);
-      background: -o-linear-gradient(left, #ff661f 0%, #d01f00 100%);
-      background: -ms-linear-gradient(left, #ff661f 0%, #d01f00 100%);
-      background: linear-gradient(to right, #ff661f 0%, #d01f00 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff661f', endColorstr='#d01f00', GradientType=1 );
       width: 96%;
       position: absolute;
       bottom: 0;
       left: 0; }
 
-@media screen and (max-width: 39.9375em) {
-  .section-hero {
-    padding-top: 2.5em; } }
+.section-hero {
+  padding-top: 2em; }
+  @media screen and (max-width: 39.9375em) {
+    .section-hero {
+      padding-top: 2.5em; } }
 
 @media screen and (max-width: 39.9375em) {
   .side-quote-container {
@@ -577,6 +565,8 @@ body {
   overflow-y: hidden;
   width: 100%; }
 
-@media screen and (max-width: 39.9375em) {
-  .section3-how-it-works-list {
-    width: 800px; } }
+.section3-how-it-works-list {
+  padding-top: 0px; }
+  @media screen and (max-width: 39.9375em) {
+    .section3-how-it-works-list {
+      width: 800px; } }

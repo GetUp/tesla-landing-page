@@ -42,56 +42,8 @@
 
 		
 		
-		<a href="/speakers/
-" class="" >Speakers</a>
-	
-		
-		
-
-		
-		
-		<a href="/program/
-" class="" >Program</a>
-	
-		
-		
-
-		
-		
-		<a href="http://www.surveygizmo.com/s3/3549361/PowerUp-Scholarship-Application
-" class="" target="_blank">Scholarships</a>
-	
-		
-		
-
-		
-		
-		<a href="http://www.surveygizmo.com/s3/3549510/Volunteer-at-PowerUp
-" class="" target="_blank">Volunteer</a>
-	
-		
-		
-
-		
-		
-		<a href="/faqs/
-" class="" >FAQs</a>
-	
-		
-		
-
-		
-		
-		<a href="http://rooms.powerup.org.au/
-" class="" >Accomm</a>
-	
-		
-		
-
-		
-		
-		<a href="/ticket/
-" class="" >Buy Ticket</a>
+		<a href="/#how-it-works
+" class="" >How it works</a>
 	
 </nav>
 
@@ -102,6 +54,22 @@
 			</header>
 
 		-->
+
+			
+<nav>
+	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+	
+		
+		
+
+		
+		
+		<a href="/#how-it-works
+" class="" >How it works</a>
+	
+</nav>
+
+
 
 		<!--HERO-->
 <div class="row expanded collapse">
@@ -187,6 +155,7 @@
 		<h3 class="section-subheading">There’s a people-powered solar revolution happening right now, right across Australia.  </h3>
 	</div>
 	<div class="small-12 medium-4 columns small-order-2 medium-order-1 side-quote-container">
+		<img src="images/section2-icon1.png" class="section-list-icon">
 		<p class="orange slab side-quote"><span class="side-quote-large">1.6 million households</span><br> in Australia have installed solar panels panels, taken control of their electricity bills and reduced their reliance on coal and gas-fired power</p>
 	</div>
 	<div class="small-12 medium-8 columns small-order-1 medium-order-2 section3-2nd-col">
@@ -201,7 +170,7 @@
 </div>
 
 <!--SECTION 3 HOW IT WORKS-->
-<div class="row">
+<div class="row" id="how-it-works">
 	<div class="small-12 columns section3-how-it-works">
 			<h2 class="orange">How it works</h2>
 	</div>
@@ -250,7 +219,7 @@
 
 
 <!--SECTION 4-->
-<div class="row section4">
+<div class="row">
 	<div class="small-12 columns">
 		<h3 class="section-subheading">Make your renewable energy available to the community </h3>
 	</div>
@@ -275,7 +244,7 @@
 </div>
 
 <!--SECTION 5 HERO-->
-<div class="row expanded collapse">
+<div class="row expanded collapse section-hero">
 	<div class="small-12 columns">
 		<img src="images/section5-hero-lg.png" class="section-hero-large show-for-medium">
 		<img src="images/section5-hero-sml.png" class="section-hero-large hide-for-medium">
@@ -312,7 +281,7 @@
 </div>
 
 
-<div>
+<div class="section-hero">
 	<h1> TJ module </h1>
 </div>
 
@@ -366,6 +335,46 @@ $(document).ready(function(){
     if (token) {
         $moduleLink.attr('href', $moduleLink.attr('href') + '?t=' + token);
     }
+
+
+
+
+	// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
 
 
 });
@@ -471,41 +480,21 @@ $(document).ready(function(){
 		<script>
 
 
-
-		document.getElementById("btn-learn-more").onclick =function(){
-			$(".learn-more")
-				.toggleClass("learn-more-unhide");
-			return false;
-		};	
 			    
-		// document.getElementById("open-nav").onclick = function () {
-		// 	document.body.classList.toggle("nav-open");
-		// 	return false;
-		// };
-		// 	document.getElementById("open-nav2").onclick = function () {
-		// 		document.body.classList.toggle("nav-open");
-		// 		$('html,body').animate({
-		// 			scrollTop: $("#open-nav2").offset().top - 50}, 'medium');
-		// 		$(".footer-logo").toggleClass("footer-logo-center");
-				
-		// 		console.log("dfd");
-		// 		return false;
-		// 	};
-		// 	$('.donate-button').magnificPopup({
-        //     	type: 'iframe',
-        //     	mainClass: 'mfp-fade',
-        //     	iframe: {
-        //         	patterns: {}
-        //    		}
-        // 	});
-
-		// 	$('.faq-donate-button').magnificPopup({
-        //     	type: 'iframe',
-        //     	mainClass: 'mfp-fade',
-        //     	iframe: {
-        //         	patterns: {}
-        //    		}
-        // 	});
+		document.getElementById("open-nav").onclick = function () {
+			document.body.classList.toggle("nav-open");
+			return false;
+		};
+			
+		document.getElementById("open-nav2").onclick = function () {
+			document.body.classList.toggle("nav-open");
+			$('html,body').animate({
+				scrollTop: $("#open-nav2").offset().top - 50}, 'medium');
+			$(".footer-logo").toggleClass("footer-logo-center");
+			
+			console.log("dfd");
+			return false;
+		};
 		</script>
 	</body>
 </html>

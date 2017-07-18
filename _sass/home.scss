@@ -10,9 +10,6 @@ body {
     width: 100vw;
     overflow: hidden;
     object-fit: cover; 
-    @media screen and (max-width: 39.9375em) {
-        height: 95vh;
-    }
 }
 
 .section-hero-large {
@@ -62,9 +59,6 @@ body {
 
 .hero-container-inside {
     height: 100vh;
-    @media screen and (max-width: 39.9375em) {
-        height: 95vh;
-    }
     .button {
         margin-bottom: 5rem;
     }
@@ -154,13 +148,6 @@ body {
                 content: "";
                 height: 5px;
                 background: rgba(255,102,31,1);
-                background: -moz-linear-gradient(left, rgba(255,102,31,1) 0%, rgba(208,31,0,1) 100%);
-                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,102,31,1)), color-stop(100%, rgba(208,31,0,1)));
-                background: -webkit-linear-gradient(left, rgba(255,102,31,1) 0%, rgba(208,31,0,1) 100%);
-                background: -o-linear-gradient(left, rgba(255,102,31,1) 0%, rgba(208,31,0,1) 100%);
-                background: -ms-linear-gradient(left, rgba(255,102,31,1) 0%, rgba(208,31,0,1) 100%);
-                background: linear-gradient(to right, rgba(255,102,31,1) 0%, rgba(208,31,0,1) 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff661f', endColorstr='#d01f00', GradientType=1 );
                 width: 96%;
                 position: absolute;
                 bottom: 0;
@@ -170,6 +157,7 @@ body {
     }
 
 .section-hero {
+    padding-top: 2em;
     @media screen and (max-width: 39.9375em) {
         padding-top: 2.5em;
     }
@@ -210,6 +198,7 @@ body {
 }
 
 .section3-how-it-works-list {
+    padding-top: 0px;
     @media screen and (max-width: 39.9375em) {
         width: 800px;
     }
