@@ -59,6 +59,9 @@ body {
 
 .hero-container-inside {
     height: 100vh;
+    .button {
+        margin-bottom: 5rem;
+    }
     .columns {
         align-self: center;
     }
@@ -71,6 +74,7 @@ body {
         }
         img {
             padding-top: 2em;
+            width: 90%;
         }
     }
 

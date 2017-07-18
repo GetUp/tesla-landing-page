@@ -461,6 +461,8 @@ body {
 
 .hero-container-inside {
   height: 100vh; }
+  .hero-container-inside .button {
+    margin-bottom: 5rem; }
   .hero-container-inside .columns {
     align-self: center; }
   @media screen and (max-width: 39.9375em) {
@@ -469,7 +471,8 @@ body {
     .hero-container-inside h1 {
       font-size: 11vw; }
     .hero-container-inside img {
-      padding-top: 2em; } }
+      padding-top: 2em;
+      width: 90%; } }
 
 .section2,
 .section3,
