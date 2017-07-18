@@ -37,7 +37,13 @@ img {
 
 
 h1 {
-	font-size: 4rem;
+	font-size: 2.8rem;
+	@media #{$tablet} {
+		font-size: 3.2rem;
+	}
+	@media #{$desktop} {
+		font-size: 4rem;
+	}
 }
 
 h2 {
@@ -51,7 +57,17 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 3rem;
+}
+
+.side-quote {
+	font-size: 1.5rem;
+}
+
+.side-quote-large {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.1;
 }
 
 h4 {
@@ -67,7 +83,7 @@ h6 {
 }
 
 body {
-	font-size: 18px;
+	font-size: 21px;
 }
 
 p, address {
@@ -79,7 +95,7 @@ p, address {
 }
 
 p {
-	font-size: 1.1em;
+	font-size: 0.9em;
 	@media #{$desktop} {
 		font-size: 1.0em;
 	}
@@ -88,15 +104,17 @@ p {
 .button {
 	background: $primary-color;
 	border-radius: 25px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.12);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.18), 0 1px 2px rgba(0,0,0,0.18);
  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	padding: 0.75em 1.3em;
 	font-weight: 900;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 30px;
 
 	@media #{$tablet} {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	&.outline {
@@ -114,7 +132,7 @@ p {
 .button{
 	&:hover, &:active {
 		background-color:$primary-color;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 7px 7px rgba(0,0,0,0.10);
+		box-shadow: 0 3px 6px rgba(0,0,0,0.22), 0 7px 7px rgba(0,0,0,0.22);
 	}
 }
 

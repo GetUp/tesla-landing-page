@@ -2,9 +2,9 @@
 # Site
 
 title: PowerUp!
-url: https://powerup.org.au
+url: 
 baseurl:
-google_analytics_key: UA-2555375-30
+google_analytics_key: 
 google_maps_javascript_api_key:
 disqus_shortname:
 
