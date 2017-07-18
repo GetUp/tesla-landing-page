@@ -132,9 +132,15 @@ body {
                 font-weight: 900;
         }
     }
-    .section3-how-it-works {
+}
+
+.section3-how-it-works {
         padding-top: 4rem;
         padding-bottom: 2rem;
+        @media screen and (max-width: 39.9375em) {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
         h2 {
             position: relative;
             text-transform: uppercase;
@@ -156,6 +162,11 @@ body {
             }
         }
     }
+
+.section-hero {
+    @media screen and (max-width: 39.9375em) {
+        padding-top: 2.5em;
+    }
 }
 
 
@@ -163,6 +174,7 @@ body {
     @media screen and (max-width: 39.9375em) {
         background: #eee;
         padding: 2rem 2rem;
+        margin-top: 2em;
         .side-quote {
             margin: 0;
             font-size: 0.9em;
@@ -177,6 +189,22 @@ body {
 }
 
 .learn-more-unhide {
-    
     display: flex !important;
+    @media screen and (max-width: 39.9375em) {
+        padding-top: 1em;
+        width: 1000px;
+    }
+}
+
+
+.wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.section3-how-it-works-list {
+    @media screen and (max-width: 39.9375em) {
+        width: 800px;
+    }
 }

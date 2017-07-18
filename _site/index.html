@@ -141,31 +141,33 @@
 	</div>
 </div>
 
-<div class="row section2 learn-more" id="learn-more-container">
-	<div class="small-6 medium-6 large-3 columns">
-		<img src="images/section2-icon1.png" class="section-list-icon">
-		<h4 class="blue"> Solar Self-Consumption </h4>
-		<p> Powerwall stores the sun’s energy to use this clean energy around the clock. </p>
-	</div>
-	<div class="small-6 medium-6 large-3 columns">
-		<img src="images/section2-icon1.png" class="section-list-icon">
-		<h4 class="blue"> Backup Power </h4>
-		<p> Combine Powerwall and solar panels to power your home 24/7, even when the grid goes down. </p>
-	</div>
-	<div class="small-6 medium-6 large-3 columns">
-		<img src="images/section2-icon1.png" class="section-list-icon">
-		<h4 class="blue"> Savings </h4>
-		<p> Access the free, abundant power of the sun with Powerwall and solar panels. </p>
-	</div>
-	<div class="small-6 medium-6 large-3 columns">
-		<img src="images/section2-icon1.png" class="section-list-icon">
-		<h4 class="blue"> Energy Independence </h4>
-		<p> Solar + Powerwall = less reliance on the grid and fossil fuels. Help to create a sustainable energy future. </p>
+<div class="wrapper">
+	<div class="row section2 learn-more" id="learn-more-container">
+		<div class="small-3 medium-6 large-3 columns">
+			<img src="images/section2-icon1.png" class="section-list-icon">
+			<h4 class="blue"> Solar Self-Consumption </h4>
+			<p> Powerwall stores the sun’s energy to use this clean energy around the clock. </p>
+		</div>
+		<div class="small-3 medium-6 large-3 columns">
+			<img src="images/section2-icon1.png" class="section-list-icon">
+			<h4 class="blue"> Backup Power </h4>
+			<p> Combine Powerwall and solar panels to power your home 24/7, even when the grid goes down. </p>
+		</div>
+		<div class="small-3 medium-6 large-3 columns">
+			<img src="images/section2-icon1.png" class="section-list-icon">
+			<h4 class="blue"> Savings </h4>
+			<p> Access the free, abundant power of the sun with Powerwall and solar panels. </p>
+		</div>
+		<div class="small-3 medium-6 large-3 columns">
+			<img src="images/section2-icon1.png" class="section-list-icon">
+			<h4 class="blue"> Energy Independence </h4>
+			<p> Solar + Powerwall = less reliance on the grid and fossil fuels. Help to create a sustainable energy future. </p>
+		</div>
 	</div>
 </div>
 
 <!--SECTION 3 HERO-->
-<div class="row expanded collapse">
+<div class="row expanded section-hero collapse">
 	<div class="small-12 columns">
 		<img src="images/section3-hero-lg.png" class="section-hero-large show-for-medium">
 		<img src="images/section3-hero-sml.png" class="section-hero-large hide-for-medium">
@@ -198,22 +200,31 @@
 	</div>
 </div>
 
-<div class="row section3">
-		<div class="small-12 columns section3-how-it-works">
-		<h2 class="orange">How it works</h2>
+<!--SECTION 3 HOW IT WORKS-->
+<div class="row">
+	<div class="small-12 columns section3-how-it-works">
+			<h2 class="orange">How it works</h2>
 	</div>
-	<div class="small-12 medium-4 columns">
-		<img src="images/how-it-works-icon1.png" class="section-list-icon">
-		<p>Power your home with energy from the sun</p>
+</div>
+ <!--SECTION 3 HOW IT WORKS LIST-->
+<div class="wrapper">
+	<div class="row section3 section3-how-it-works-list">
+		<div class="small-4 medium-4 columns">
+			<img src="images/how-it-works-icon1.png" class="section-list-icon">
+			<p>Power your home with energy from the sun</p>
+		</div>
+		<div class="small-4 medium-4 columns">
+			<img src="images/how-it-works-icon1.png" class="section-list-icon">
+			<p>Charge your Powerwall 2 for use when the sun is down.</p>
+		</div>
+		<div class="small-4 medium-4 columns">
+			<img src="images/how-it-works-icon1.png" class="section-list-icon">
+			<p>Feed any excess back into the grid and be paid for your electricity.</p>
+		</div>
 	</div>
-	<div class="small-12 medium-4 columns">
-		<img src="images/how-it-works-icon1.png" class="section-list-icon">
-		<p>Charge your Powerwall 2 for use when the sun is down.</p>
-	</div>
-	<div class="small-12 medium-4 columns">
-		<img src="images/how-it-works-icon1.png" class="section-list-icon">
-		<p>Feed any excess back into the grid and be paid for your electricity.</p>
-	</div>
+</div>
+
+<div class="row">
 	<div class="small-12 columns">
 		<center>
 			<button class="button gradient">I’M READY TO GET POWERWALL 2</button>
@@ -224,7 +235,7 @@
 
 <!--SECTION 4 HERO-->
 
-<div class="row expanded collapse">
+<div class="row expanded section-hero collapse">
 	<div class="small-12 columns">
 		<img src="images/section4-hero-lg.png" class="section-hero-large show-for-medium">
 		<img src="images/section5-hero-sml.png" class="section-hero-large hide-for-medium">
@@ -324,7 +335,11 @@ $(document).ready(function(){
 	//   }
     // });
 
-
+		document.getElementById("btn-learn-more").onclick =function(){
+			$(".learn-more")
+				.toggleClass("learn-more-unhide");
+			return false;
+		};	
 
     
     
