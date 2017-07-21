@@ -221,9 +221,10 @@ id: home
 
 <div class="section-hero editable gradient">
 	<div id="cta"></div>
-	<script src="https://d68ej2dhhub09.cloudfront.net/scripts/embed.js" data-container="cta" data-stylesheet="https://d68ej2dhhub09.cloudfront.net/scripts/embed.css" data-url="https://www.getup.org.au/campaigns/market-impact/embeddable-modules/tesla"></script>
-</div>
 <div id = "cta-thanks" style = "display:none;"><p style = "color: white';"> Thanks very much for your inquiry, someone from Tesla will be in touch shortly</p></div>
+
+<script src="https://d68ej2dhhub09.cloudfront.net/scripts/embed.js" data-container="cta" data-stylesheet="https://d68ej2dhhub09.cloudfront.net/scripts/embed.css" data-url="https://www.getup.org.au/campaigns/market-impact/embeddable-modules/tesla"></script>
+</div>
 
 
 <script>
@@ -319,7 +320,8 @@ $('a[href*="#"]')
 
 
 $("#btn-primary").click(function(){
-	$("#cta-thanks").show();
+	$("#cta").hide();
+	$("#cta-thanks").show();	
 	
 	})
 
