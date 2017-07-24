@@ -8,15 +8,14 @@
 	<meta property="og:title" content="Capture the sun" />
 	<meta property="og:description"  content="GetUp is kick-starting a solar revolution. You can now use 100% sustainable energy with Tesla Powerwall 2." />
 	<meta property="og:image" content="http://cdn.getup.org.au/image_16421_full.jpg" />
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-flex.min.css">
 	<link rel="stylesheet" href="/css/screen.css">
-	<link rel="icon" type="image/png" href="/favicon.png">
+	
+	<link rel="icon" type="image/png" href="/touch-icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Slab:300,700" rel="stylesheet">
-	<link href="https://s3-ap-southeast-2.amazonaws.com/getup-design-web-assets/magnific-popup.css" rel="stylesheet">
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://www.getup.org.au/assets/external_site.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	
@@ -340,7 +339,7 @@ $(document).ready(function(){
     var $moduleLink = $('a.module');
     if (token) {
         $moduleLink.attr('href', $moduleLink.attr('href') + '?t=' + token);
-    }
+    };
 
 
 
@@ -366,7 +365,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 500, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -378,7 +377,7 @@ $('a[href*="#"]')
             $target.focus(); // Set focus again
           };
         });
-      }
+	  }
     }
   });
 
