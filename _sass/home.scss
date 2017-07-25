@@ -235,8 +235,10 @@ body {
 
 
 .wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    @media screen and (max-width: 39.9375em) {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
     width: 100%;
     background: #2098f5;
 }

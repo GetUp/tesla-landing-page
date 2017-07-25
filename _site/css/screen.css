@@ -607,10 +607,12 @@ body {
       width: 1000px; } }
 
 .wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
   width: 100%;
   background: #2098f5; }
+  @media screen and (max-width: 39.9375em) {
+    .wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden; } }
 
 .learn-more,
 .section3-how-it-works {
