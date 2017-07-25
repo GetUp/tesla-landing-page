@@ -634,3 +634,12 @@ body {
     padding-top: 30px; }
   .section3-how-it-works-list p {
     text-align: center; }
+
+a:active,
+a:focus,
+div:focus,
+div:active,
+button {
+  outline: 0 !important;
+  border: none;
+  -moz-outline-style: none; }
