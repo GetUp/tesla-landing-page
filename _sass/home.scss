@@ -2,6 +2,11 @@ body {
     width: 100%;
 }
 
+.columns {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .hero-large,
 .section-hero-large {
     position: absolute;
@@ -25,7 +30,7 @@ body {
         height: auto !important;
         div {
             padding: 0;
-            padding: 2rem 10px 2rem 10px;
+            padding: 2rem 15px 2rem 15px;
 
             background: rgba(255,102,31,1);
             background: -moz-linear-gradient(left, rgba(255,102,31,1) 0%, rgba(208,31,0,1) 100%);
@@ -65,12 +70,16 @@ body {
     .columns {
         align-self: center;
     }
+    h1 {
+        padding-top: 30vh;
+    }
     @media screen and (max-width: 39.9375em) {
         p {
             margin-bottom: 0;
         }
         h1 {
             font-size: 11vw;
+            padding-top: 0;
         }
         img {
             padding-top: 2em;
@@ -104,6 +113,22 @@ body {
     p {
         padding-top: 30px;
     }
+    @media screen and (max-width: 39.9375em) {
+        padding-bottom: 60px;
+    }
+
+}
+
+.section5 {
+    @media screen and (max-width: 39.9375em) {
+        padding-bottom: 60px;
+    }
+}
+
+.section5-hero {
+    @media screen and (max-width: 39.9375em) {
+        padding-top: 0px !important;
+    }
 }
 
 .section-list-icon {
@@ -115,11 +140,14 @@ body {
 .section-subheading {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    color: #555;
+    font-weight: 400;
     @media screen and (max-width: 39.9375em) {
         font-size: 1.6rem;
         line-height: 1.3;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        font-weight: 700;
     }
 
 }
@@ -147,7 +175,7 @@ body {
             &:after {
                 content: "";
                 height: 5px;
-                background: rgba(255,102,31,1);
+                background: #fff;
                 width: 96%;
                 position: absolute;
                 bottom: 0;
@@ -167,7 +195,7 @@ body {
 .side-quote-container {
     @media screen and (max-width: 39.9375em) {
         background: #eee;
-        padding: 2rem 2rem;
+        padding: 4rem 2rem;
         margin-top: 2em;
         .side-quote {
             margin: 0;
@@ -180,6 +208,9 @@ body {
 .learn-more {
     display: none;
     padding-top: 0px;
+    p {
+        opacity: 0.7;
+    }
 }
 
 .learn-more-unhide {
@@ -195,11 +226,42 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
+    background: #2098f5;
+}
+
+
+.learn-more,
+.section3-how-it-works {
+    padding-top: 50px;
+}
+
+#how-it-works {
+    background: #2098f5;
 }
 
 .section3-how-it-works-list {
     padding-top: 0px;
+    padding-bottom: 15px;
     @media screen and (max-width: 39.9375em) {
         width: 800px;
     }
+
+    .section-list-icon {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        padding-top: 30px;
+    }
+
+    p {
+        text-align: center;
+    }
 }
+
+
+
+// .row > .columns,
+// .row > .column,
+// .row > .row {
+//     max-width: 1000px !important;
+// }

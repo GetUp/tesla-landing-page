@@ -115,6 +115,8 @@ p {
 
 	@media #{$tablet} {
 		font-size: 0.8em;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 
 	&.outline {
@@ -173,4 +175,22 @@ a:hover {
 .reset {
 	padding: 0;
 	margin: 0;
+}
+
+
+.row {
+	max-width: 1050px;
+}
+
+.blue-bg {
+	background: #2098f5 !important;
+}
+
+
+.remove-top-pad {
+	padding-top: 0px !important;
+}
+
+.add-bottom-pad {
+	padding-bottom: 50px !important;
 }
