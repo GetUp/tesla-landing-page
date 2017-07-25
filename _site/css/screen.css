@@ -567,7 +567,8 @@ body {
       width: 96%;
       position: absolute;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      opacity: 0.2; }
   @media screen and (max-width: 39.9375em) {
     .section3-how-it-works h2 {
       line-height: 0.9; }
