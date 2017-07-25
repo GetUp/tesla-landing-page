@@ -182,6 +182,15 @@ body {
                 left: 0;
             }
         }
+        @media screen and (max-width: 39.9375em) {
+            h2 {
+                line-height: 0.9;
+                &:after {
+                    bottom: -10px;
+                    width: 100%;
+                }
+            }
+        }
     }
 
 .section-hero {
@@ -236,6 +245,8 @@ body {
 .learn-more,
 .section3-how-it-works {
     padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #how-it-works {

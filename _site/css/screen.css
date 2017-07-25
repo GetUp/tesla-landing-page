@@ -568,6 +568,12 @@ body {
       position: absolute;
       bottom: 0;
       left: 0; }
+  @media screen and (max-width: 39.9375em) {
+    .section3-how-it-works h2 {
+      line-height: 0.9; }
+      .section3-how-it-works h2:after {
+        bottom: -10px;
+        width: 100%; } }
 
 .section-hero {
   padding-top: 2em; }
@@ -608,7 +614,9 @@ body {
 
 .learn-more,
 .section3-how-it-works {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-left: 0;
+  padding-right: 0; }
 
 #how-it-works {
   background: #2098f5; }
