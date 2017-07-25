@@ -211,6 +211,9 @@ body {
     p {
         opacity: 0.7;
     }
+    @media screen and (max-width: 39.9375em) {
+        padding-bottom: 50px;
+    }
 }
 
 .learn-more-unhide {
